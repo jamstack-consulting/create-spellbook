@@ -1,0 +1,38 @@
+{
+  "name": "create-spellbook",
+  "version": "0.0.12",
+  "description": "This is used to create the mono-repo needed to start using spellbook. ",
+  "source": "index.ts",
+  "bin": {
+    "create-spellbook": "dist/index.js"
+  },
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "types": "dist/types.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liltechnomancer/jamstack.consulting.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liltechnomancer/jamstack.consulting/issues"
+  },
+  "homepage": "https://github.com/liltechnomancer/jamstack.consulting#readme",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
+}
